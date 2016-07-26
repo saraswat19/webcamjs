@@ -246,7 +246,9 @@ var Webcam = {
 
 		if (this.userMedia !== true) {
 			// call for turn off camera in flash
-			this.getMovie()._releaseCamera();
+			
+			//_releaseCamera function is not defined. Due to which not working on safari browser
+			//this.getMovie()._releaseCamera(); 
 		}
 
 		if (this.container) {
